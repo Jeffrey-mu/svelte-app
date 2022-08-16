@@ -2,22 +2,21 @@
   "0 debug pnpm:scope": {
     "selected": 1
   },
-  "1 info pnpm": {
-    "err": {
-      "name": "Error",
-      "message": "not found: creat3",
-      "code": "ENOENT",
-      "stack": "Error: not found: creat3\n    at getNotFoundError (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:41595:51)\n    at Function.whichSync [as sync] (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:41672:13)\n    at getCommandAbsolutePathSync (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:43237:44)\n    at default_1 (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:43246:32)\n    at /opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:178233:39"
-    }
-  },
-  "2 error pnpm": {
-    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
-    "prefix": "/Users/wjf",
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "app@0.0.1",
+    "stage": "dev",
+    "script": "vite dev",
+    "pkgname": "app",
     "err": {
       "name": "pnpm",
-      "message": "not found: creat3",
-      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
-      "stack": "Error: not found: creat3\n    at getNotFoundError (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:41595:51)\n    at Function.whichSync [as sync] (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:41672:13)\n    at getCommandAbsolutePathSync (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:43237:44)\n    at default_1 (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:43246:32)\n    at /opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:178233:39"
+      "message": "app@0.0.1 dev: `vite dev`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: app@0.0.1 dev: `vite dev`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:92290:22)\n    at ChildProcess.emit (node:events:390:28)\n    at maybeClose (node:internal/child_process:1064:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
     }
-  }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
 }
